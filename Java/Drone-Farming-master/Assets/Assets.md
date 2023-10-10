@@ -1,0 +1,1 @@
+# This folder will contain all assets related to the project (photos, logos, etc.)

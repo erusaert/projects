@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.SEG5C.View.ItemSelectionController">
+   <children>
+      <AnchorPane layoutX="87.0" layoutY="-62.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="-29.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../../../../../Assets/Logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="146.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aerial Drone Farming" AnchorPane.leftAnchor="120.0">
+               <font>
+                  <Font name="Avenir Roman" size="40.0" />
+               </font>
+            </Text>
+            <ButtonBar layoutX="937.0" layoutY="17.0" prefHeight="40.0" prefWidth="407.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <buttons>
+                <Button mnemonicParsing="false" text="Dashboard" />
+                  <Button mnemonicParsing="false" text="Drone Settings" />
+                  <Button mnemonicParsing="false" text="Profile" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="500.0" layoutY="98.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <AnchorPane layoutX="138.0" layoutY="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <children>
+                  <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="322.0" layoutY="185.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../../../../../Assets/Grass.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="droneImage" fitHeight="55.0" fitWidth="55.0" layoutX="22.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@../../../../../Assets/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TreeView fx:id="treeView" layoutX="21.0" layoutY="62.0" prefHeight="236.0" prefWidth="337.0" showRoot="false" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0">
+               <effect>
+                  <InnerShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+            </TreeView>
+            <Text layoutX="1.0" layoutY="-1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Farm" textAlignment="CENTER" wrappingWidth="378.8832244873047" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drone Controls" textAlignment="CENTER" wrappingWidth="378.8832244873047" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="375.59765625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="89.0" layoutY="414.0" prefHeight="216.0" prefWidth="337.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="414.0">
+               <effect>
+                  <InnerShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+               <children>
+                  <ButtonBar buttonOrder="U+L_HE+FBIX_NCYOA_R" layoutX="69.0" layoutY="92.0" prefHeight="260.0" prefWidth="337.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <buttons>
+                      <Button fx:id="scanFarmButton" mnemonicParsing="false" onAction="#scanFarmClicked" prefHeight="40.0" prefWidth="90.0" text="Scan Farm" />
+                        <Button fx:id="visitButton" mnemonicParsing="false" onAction="#visitClicked" prefHeight="40.0" prefWidth="203.0" text="Visit Item/Item Container" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+            <ButtonBar buttonOrder="U+L_HE+FBIX_NCYOA_R" layoutX="20.0" layoutY="304.0" prefHeight="40.0" prefWidth="337.0">
+              <buttons>
+                <Button fx:id="addButton" mnemonicParsing="false" prefHeight="49.0" text="Add" />
+                  <Button fx:id="editButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" text="Edit" textAlignment="CENTER" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
