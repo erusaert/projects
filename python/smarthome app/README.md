@@ -37,9 +37,10 @@ Note: Inside build/assets there are frame folders which contain pngs of buttons.
 ![gui screenshot](gui screenshot.PNG)
 
 ## Authors
-Nodira Berdieva <br>
+Aaron Zheng<br>
 Joel Garner<br>
 Sophie Inchyna<br>
+Nodira Berdieva <br>
 Sam Price<br>
 Kirby Russell<br>
-Aaron Zheng<br>
+
