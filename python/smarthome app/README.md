@@ -1,4 +1,4 @@
-# team 2 CS499 Capstone project
+# Capstone project
 
 
 
@@ -23,12 +23,6 @@ Adding/pushing new files:
  git push origin branch-name-here
  ```
 
-## Links
-
-Project agenda: https://docs.google.com/document/d/1zP9ePzxjtKugg4q-gkRsiZA4fWdc3_wM/edit?usp=sharing&ouid=100883178545077519882&rtpof=true&sd=true
-
-Project template: https://docs.google.com/document/d/1LVOfnuR-ogIwjjUvF59qExrkZTHIYTY-/edit?usp=sharing&ouid=100883178545077519882&rtpof=true&sd=true
-
 ## Name
 Nucleus
 
@@ -43,9 +37,10 @@ Note: Inside build/assets there are frame folders which contain pngs of buttons.
 ![gui screenshot](gui screenshot.PNG)
 
 ## Authors
-Nodira Berdieva <br>
+Aaron Zheng<br>
 Joel Garner<br>
 Sophie Inchyna<br>
+Nodira Berdieva <br>
 Sam Price<br>
 Kirby Russell<br>
-Aaron Zheng<br>
+
